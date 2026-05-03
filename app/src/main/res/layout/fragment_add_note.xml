@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_variant"
+    android:orientation="vertical"
+    tools:context=".view.fragments.NoteAddFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/addToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:theme="@style/NotesApp.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/addTitleNoteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:hint="@string/hint_note_title_enter"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:minLines="1"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:id="@+id/addDescriptionNoteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/border"
+        android:gravity="start"
+        android:hint="@string/hint_note_desc_enter"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
+</LinearLayout>

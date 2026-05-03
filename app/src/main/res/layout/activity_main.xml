@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    Main layout for MainActivity.
+
+    FragmentContainerView hosts NavHostFragment with navigation graph `nav_graph_main`.
+    Default start destination: ContainerViewPagerFragment (displays notes and tasks tabs).
+    Additional destinations can be added to the navigation graph as needed.
+
+    StatusBarBackground: Custom view that acts as a background for the status bar.
+    Required for Android 15+ (API 35+) where the system status bar is forced to be transparent
+    in edge-to-edge mode. The height of this view is set dynamically in the code.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <View
+        android:id="@+id/statusBarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/primary" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph_main" />
+</LinearLayout>
+
+
+
+
+
+
+

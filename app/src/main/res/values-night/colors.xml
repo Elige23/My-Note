@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="primary">#121212</color>
+    <color name="on_primary">#BDB398</color>
+    <color name="surface">#282828</color>
+    <color name="on_surface">#FFFFFFFF</color>
+    <color name="on_surface_variant">#BDB398</color>
+    <color name="secondary">#434137</color>
+    <color name="surface_variant">#121212</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="primary_container">#4E4C40</color>
+    <color name="on_primary_container">#BDB398</color>
+    <color name="color_item_toolbar">#BDB398</color>
+    <color name="surface_inverse">#434137</color>
+    <color name="on_surface_inverse">#BDB398</color>
+    <color name="primary_inverse">#BDB398</color>
+    <color name="text_color_tertiary">#BDB398</color>
+    <color name="color_background">#121212</color>
+
+    <!--    Status bar -->
+    <color name="status_bar_background">#121212</color>
+
+    <!--    Note card -->
+    <color name="note_button_delete">#434137</color>
+
+    <!--    TabLayout-->
+    <color name="color_item_tab">#BDB398</color>
+
+    <!--    Bottom Sheet-->
+<!--    <color name="color_bottom_sheet_scrim">#121F1712</color>-->
+    <color name="color_bottom_sheet_scrim">#291F1712</color>
+    <color name="color_bottom_sheet_title_text">#BDB398</color>
+    <color name="color_textInputLayout_hint_text_focus">#686555</color>
+    <color name="color_bottom_sheet_outlinedButton_stroke">#BDB398</color>
+    <color name="color_bottom_sheet_outlinedButton_text">#BDB398</color>
+    <color name="color_bottom_sheet_solidButton_background">#BDB398</color>
+    <color name="color_bottom_sheet_solidButton_text">#121212</color>
+
+    <!--    Colors for switch-->
+    <color name="color_switch_thumb_unchecked">#615E50</color>
+    <color name="color_switch_track_unchecked">#3C3B31</color>
+    <color name="color_switch_thumb_checked">#BDB398</color>
+    <color name="color_switch_track_checked">#1FA1F606</color>
+
+    <!--    Colors for alert dialog-->
+    <color name="alert_dialog_button_positive">#66735A</color>
+    <color name="alert_dialog_button_positive_text">#BDB398</color>
+    <color name="alert_dialog_button_negative_text">#BDB398</color>
+    <color name="alert_dialog_button_neutral_text">#BDB398</color>
+    <color name="alert_dialog_title_text">#E7DBBB</color>
+    <color name="alert_dialog_message_text">#DCE7DBBB</color>
+    <color name="alert_dialog_background">#3C3939</color>
+</resources>

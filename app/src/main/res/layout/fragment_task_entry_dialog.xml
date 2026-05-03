@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    TaskEntryBottomSheetDialog layout for create new task.
+
+    Supports two task types:
+    - Single task: A single task
+    - Group task: A task group with subtasks
+
+    UI Behavior:
+    - When "Group mode" SwitchMaterial switch is OFF: show single task section, hide group task with subtask section
+    - When "Group mode" SwitchMaterial switch is ON: shows group section + subtasks section (RecyclerView + Add button)
+
+    The group section, subtasks RecyclerView and related views are hidden by default and become visible only
+    when group mode is activated.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:text="@string/title_task_enter_bottom_sheet"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Single Task Section -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etTaskDescriptionTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/hint_single_task_title_entry"
+        app:hintTextColor="@color/color_textInputLayout_hint_text_focus"
+        android:layout_weight="1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:textColor="@color/text_color_tertiary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    Section for switching between showing UI for a single task or a group task-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/action_group_mode_entry_bottom_sheet" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchIsGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Group Task with Subtasks Section -->
+    <!-- Group Section -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/hint_group_task_title_entry"
+        app:hintTextColor="@color/color_textInputLayout_hint_text_focus">
+
+        <!-- Limit to 2 lines to prevent the EditText from expanding too much -->
+        <!-- and pushing other UI elements (buttons, subtasks) off the screen -->
+        <!-- in both portrait and landscape orientations. -->
+        <!-- But ultimately the number of lines is adjusted programmatically in the code
+        depending on the portrait and landscape modes.-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etGroupDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:imeOptions="actionNext"
+            android:maxLines="2"
+            android:textColor="@color/text_color_tertiary"
+            android:visibility="gone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Subtasks Section -->
+        <LinearLayout
+            android:id="@+id/groupSubtasksLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_subtasks_entry_bottom_sheet"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/subtaskRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="true" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addSubtaskButton"
+                style="@style/OutlinedButton.MyNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/action_add_subtask_entry_bottom_sheet" />
+        </LinearLayout>
+
+        <!-- Section of cancel and save buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelButton"
+                style="@style/OutlinedButton.MyNote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="@string/action_cancel_entry_bottom_sheet" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveButton"
+                style="@style/SolidButton.MyNote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/action_save_entry_bottom_sheet" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

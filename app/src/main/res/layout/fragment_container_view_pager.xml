@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    Container fragment with tabs (notes/tasks) and ViewPager2.
+
+    TabLayout displays two tabs:
+    - Notes Tab → NotesFragment
+    - Tasks Tab → TasksFragment
+
+    ViewPager2 enables navigation between tabs using gestures and taps on tabs.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.ContainerViewPagerFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimary"
+        android:paddingTop="2dp"
+        app:tabIconTint="@color/color_item_tab"
+        app:tabIndicatorColor="@color/color_item_tab"
+        app:tabTextColor="@color/color_item_tab" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4" />
+</LinearLayout>

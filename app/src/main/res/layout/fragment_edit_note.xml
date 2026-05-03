@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.NoteAddFragment"
+    android:orientation="vertical"
+    android:background="@color/surface_variant">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/editToolbar"
+            android:theme="@style/NotesApp.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTitleNoteFragment"
+        android:hint="@string/hint_note_title_enter"
+        android:inputType="textMultiLine"
+        android:minLines="1"
+        android:maxLines="4"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="5dp"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/border" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/editDescriptionNoteFragment"
+        android:hint="@string/hint_note_desc_enter"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="5dp"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/border"
+        android:layout_marginBottom="25dp" />
+</LinearLayout>

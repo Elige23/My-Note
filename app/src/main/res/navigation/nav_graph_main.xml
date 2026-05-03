@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Navigation graph that links MainActivity with ContainerViewPagerFragment (Default start destination),
+    which hosts the tab container (Notes + Tasks). Includes note operations graph.
+-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/containerViewPagerFragment">
+
+    <fragment
+        android:id="@+id/containerViewPagerFragment"
+        android:name="com.example.mynote.view.fragments.ContainerViewPagerFragment"
+        android:label="fragment_container_view_pager"
+        tools:layout="@layout/fragment_container_view_pager" />
+
+    <include app:graph="@navigation/nav_graph_note" />
+</navigation>

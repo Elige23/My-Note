@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Fragment: TasksFragment
+    Displays all tasks (both single and grouped with subtasks) in a linear list (configured programmatically in the layout manager)
+    and a floating action button for adding a new task.
+
+    Structure:
+    - AppBarLayout with toolbar
+    - RecyclerView for tasks
+    - FloatingActionButton for adding new tasks
+
+    RecyclerView configuration:
+    - clipToPadding=false: content scrolls under padding, making it appear above the navigation bar
+    - paddingBottom=250dp: ensures the last item is not hidden behind the navigation bar or floating action button
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/homeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:theme="@style/NotesApp.Toolbar"
+            app:title="@string/title_task_toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homeTaskRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingHorizontal="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="150dp"
+            android:contentDescription="@string/desc_add_action_task"
+            android:elevation="10dp"
+            android:src="@drawable/baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:rippleColor="@color/primary" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

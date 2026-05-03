@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Note</string>
+
+    <!--    NoteAddFragment, NoteEditFragment-->
+    <string name="toast_note_saved">Note saved</string>
+    <string name="hint_note_title_enter">Enter Title</string>
+    <string name="hint_note_desc_enter">Enter Description</string>
+
+    <!--    NoteAddFragment-->
+    <string name="toast_note_title_empty">Title cannot be empty!</string>
+
+    <!--    DeleteNoteConfirmationDialogFragment-->
+    <string name="dialog_title_delete_note">Deleting</string>
+    <string name="dialog_message_delete_note">Delete Note: %1$s?</string>
+    <string name="dialog_action_delete_note">Delete</string>
+    <string name="dialog_action_cancel_note">Cancel</string>
+    <string name="dialog_toast_note_deleted">Note %1$s was deleted</string>
+
+    <!--    NoteHomeFragment-->
+    <string name="title_notes_toolbar">Notes</string>
+    <string name="message_snackbar_delete_note">Deleted Note: %1$s</string>
+    <string name="action_cancel_snackbar">Cancel</string>
+    <string name="desc_add_action_note">Add Note</string>
+
+    <!--    SearchHelper-->
+    <string name="hint_search_note">Search…</string>
+
+    <!--    Card-->
+    <string name="desc_delete_note">Delete Note</string>
+
+    <!--    Menu-->
+    <string name="action_add_note">add Note</string>
+    <string name="action_delete_note">Delete Note</string>
+    <string name="action_save_note">Save Note</string>
+    <string name="action_search_notes">Search Notes</string>
+
+    <!--    ExitConfirmationNoteDialogFragment-->
+    <string name="dialog_title_save_add_note_fragment">Save note?</string>
+    <string name="dialog_action_save_add_note_fragment">Yes</string>
+    <string name="dialog_action_delete_add_note_fragment">No</string>
+    <string name="dialog_action_cancel_add_note_fragment">Cancel</string>
+
+    <!--    UnsavedChangesNoteDialogFragment-->
+    <string name="dialog_title_save_changes_note_edit_fragment">Save changes?</string>
+    <string name="dialog_action_save_changes_note_edit_fragment">Yes</string>
+    <string name="dialog_action_discard_changes_note_edit_fragment">No</string>
+    <string name="dialog_action_cancel_note_edit_fragment">Cancel</string>
+
+    <!--    FragmentStateAdapterViewPager-->
+    <string name="title_note_tablayout"> Notes </string>
+    <string name="title_task_tablayout"> Tasks </string>
+
+    <!--    TasksFragment-->
+    <string name="desc_add_action_task">Add Task</string>
+    <string name="title_task_toolbar">Tasks</string>
+
+    <!--    TaskEntryBottomSheetDialog-->
+    <string name="title_task_enter_bottom_sheet">New Task</string>
+    <string name="hint_single_task_title_entry">Description</string>
+    <string name="action_group_mode_entry_bottom_sheet">Is Group Task?</string>
+    <string name="hint_group_task_title_entry">Group Description</string>
+    <string name="label_subtasks_entry_bottom_sheet">Subtasks</string>
+    <string name="action_add_subtask_entry_bottom_sheet">Add Subtask</string>
+    <string name="action_cancel_entry_bottom_sheet">Cancel</string>
+    <string name="action_save_entry_bottom_sheet">Save</string>
+
+    <!--    TaskEditBottomSheetDialog-->
+    <string name="title_task_edit_bottom_sheet">Editing</string>
+    <string name="hint_single_task_description_task_edit_bottom_sheet">Description</string>
+    <string name="hint_group_task_description_task_edit_bottom_sheet">Group Description</string>
+    <string name="title_subtasks_task_edit_bottom_sheet">Subtasks</string>
+    <string name="action_add_subtask_task_edit_bottom_sheet">Add Subtask</string>
+    <string name="action_cancel_task_edit_bottom_sheet">Cancel</string>
+    <string name="action_save_task_edit_bottom_sheet">Save</string>
+
+    <!--    EnterTaskSaveConfirmationDialog-->
+    <string name="dialog_group_title_save_task_entry_bottom_sheet">Save task group: %1$s?</string>
+    <string name="dialog_single_title_save_task_entry_bottom_sheet">Save task: %1$s?</string>
+    <string name="dialog_action_save_task_entry_bottom_sheet">Save</string>
+    <string name="dialog_action_close_no_save_entry_bottom_sheet">Discard</string>
+    <string name="dialog_action_cancel_dialog_entry_bottom_sheet">Cancel</string>
+
+    <!--    DeleteSubtaskConfirmationDialog, DeleteTaskConfirmationDialog-->
+    <string name="dialog_title_delete_subtask_edit_bottom_sheet">Deleting</string>
+
+    <!--    DeleteSubtaskConfirmationDialog-->
+    <string name="dialog_message_delete_subtask_edit_bottom_sheet">Delete subtask: %1$s?</string>
+    <string name="dialog_action_delete_subtask_edit_bottom_sheet">Delete</string>
+    <string name="dialog_action_cancel_edit_bottom_sheet">Cancel</string>
+
+    <!--    DeleteTaskConfirmationDialog-->
+    <string name="dialog_title_delete_taskgroup_task_fragment">Delete task group: %1$s?</string>
+    <string name="dialog_title_delete_single_task_task_fragment">Delete single task: %1$s?</string>
+    <string name="dialog_action_delete_task_fragment">Yes</string>
+    <string name="dialog_action_cancel_task_fragment">No</string>
+
+    <!--    SaveEditTaskConfirmationDialog-->
+    <string name="dialog_title_save_changes_task_edit_bottom_sheet">Save changes?</string>
+    <string name="dialog_action_save_changes_task_edit_bottom_sheet">Yes</string>
+    <string name="dialog_action_discard_changes_task_edit_bottom_sheet">No</string>
+    <string name="dialog_action_cancel_task_edit_bottom_sheet">Cancel</string>
+</resources>

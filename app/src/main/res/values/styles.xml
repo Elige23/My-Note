@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    Toolbar styles -->
+    <style name="NotesApp.Toolbar" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="iconTint">@color/color_item_toolbar</item>
+        <item name="titleTextColor">@color/color_item_toolbar</item>
+    </style>
+
+    <!--    Buttons styles in Task BottomSheets -->
+    <style name="OutlinedButton.MyNote" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/color_bottom_sheet_outlinedButton_stroke</item>
+        <item name="android:textColor">@color/color_bottom_sheet_outlinedButton_text</item>
+    </style>
+
+    <style name="SolidButton.MyNote" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/color_bottom_sheet_solidButton_background</item>
+        <item name="android:textColor">@color/color_bottom_sheet_solidButton_text</item>
+    </style>
+
+    <!--    Buttons styles in MaterialAlertDialog -->
+    <style name="AlertDialogButton.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/alert_dialog_button_positive_text</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="AlertDialogButton.Negative" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/alert_dialog_button_negative_text</item>
+    </style>
+
+    <style name="AlertDialogButton.Neutral" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/alert_dialog_button_neutral_text</item>
+    </style>
+
+    <!--    MaterialAlertDialog theme -->
+    <style name="ThemeOverlay.MyNote.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="buttonBarPositiveButtonStyle">@style/AlertDialogButton.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AlertDialogButton.Negative</item>
+        <item name="buttonBarNeutralButtonStyle">@style/AlertDialogButton.Neutral</item>
+        <item name="materialAlertDialogTitleTextStyle">
+            @style/MaterialAlertDialog.MyNote.Title.Text
+        </item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.MyNote.Body.Text
+        </item>
+
+        <!-- Background -->
+        <item name="colorSurfaceContainerHigh">@color/alert_dialog_background</item>
+    </style>
+
+    <!--    MaterialAlertDialog Title Text Style -->
+    <style name="MaterialAlertDialog.MyNote.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/alert_dialog_title_text</item>
+    </style>
+
+    <!--    MaterialAlertDialog Body Text Style -->
+    <style name="MaterialAlertDialog.MyNote.Body.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/alert_dialog_message_text</item>
+    </style>
+
+    <!--    Switch style -->
+    <style name="Switch.MyNote" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MyNote.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.MyNote.Switch" parent="">
+        <item name="colorOnSurface">@color/color_switch_thumb_unchecked</item>
+        <item name="colorOutline">@color/color_switch_track_unchecked</item>
+        <item name="colorPrimary">@color/color_switch_thumb_checked</item>
+        <item name="colorPrimaryContainer">@color/color_switch_track_checked</item>
+    </style>
+
+</resources>

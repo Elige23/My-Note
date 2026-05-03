@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.MyNote" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Material Design 3 color attributes -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+        <item name="colorSurfaceInverse">@color/surface_inverse</item>
+        <item name="colorOnSurfaceInverse">@color/on_surface_inverse</item>
+        <item name="colorPrimaryInverse">@color/primary_inverse</item>
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorTertiary">@color/text_color_tertiary</item>
+        <item name="android:textColorPrimary">@color/text_color_tertiary</item>
+        <item name="android:textColorSecondary">@color/text_color_tertiary</item>
+
+        <!-- Global component styles (applied to all instances by default) -->
+        <item name="switchStyle">@style/Switch.MyNote</item>
+
+        <!-- System UI -->
+        <item name="android:statusBarColor">@color/status_bar_background</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+    </style>
+
+    <style name="Theme.MyNote" parent="Base.Theme.MyNote" />
+
+</resources>

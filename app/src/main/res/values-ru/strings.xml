@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мои Заметки</string>
+
+    <!--    NoteAddFragment, NoteEditFragment-->
+    <string name="toast_note_saved">Заметка сохранена</string>
+    <string name="hint_note_title_enter">Введите заголовок</string>
+    <string name="hint_note_desc_enter">Введите описание</string>
+
+    <!--    NoteAddFragment-->
+    <string name="toast_note_title_empty">Заголовок не может быть пустым!</string>
+
+    <!--    DeleteNoteConfirmationDialogFragment-->
+    <string name="dialog_title_delete_note">Удаление</string>
+    <string name="dialog_message_delete_note">Удалить заметку: %1$s?</string>
+    <string name="dialog_action_delete_note">Удалить</string>
+    <string name="dialog_action_cancel_note">Отмена</string>
+    <string name="dialog_toast_note_deleted">Заметка %1$s была удалена</string>
+
+    <!--    NoteHomeFragment-->
+    <string name="title_notes_toolbar">Заметки</string>
+    <string name="message_snackbar_delete_note">Заметка "%1$s" удалена</string>
+    <string name="action_cancel_snackbar">Отмена</string>
+    <string name="desc_add_action_note">Добавить заметку</string>
+
+    <!--    SearchHelper-->
+    <string name="hint_search_note">Поиск…</string>
+
+    <!--    Card-->
+    <string name="desc_delete_note">Удалить заметку</string>
+
+    <!--    Menu-->
+    <string name="action_add_note">Добавить заметку</string>
+    <string name="action_delete_note">Удалить заметку</string>
+    <string name="action_save_note">Сохранить заметку</string>
+    <string name="action_search_notes">Поиск заметок</string>
+
+    <!--    ExitConfirmationNoteDialogFragment-->
+    <string name="dialog_title_save_add_note_fragment">Сохранить заметку?</string>
+    <string name="dialog_action_save_add_note_fragment">Да</string>
+    <string name="dialog_action_delete_add_note_fragment">Нет</string>
+    <string name="dialog_action_cancel_add_note_fragment">Отмена</string>
+
+    <!--    UnsavedChangesNoteDialogFragment-->
+    <string name="dialog_title_save_changes_note_edit_fragment">Сохранить изменения?</string>
+    <string name="dialog_action_save_changes_note_edit_fragment">Да</string>
+    <string name="dialog_action_discard_changes_note_edit_fragment">Нет</string>
+    <string name="dialog_action_cancel_note_edit_fragment">Отмена</string>
+
+    <!--    FragmentStateAdapterViewPager-->
+    <string name="title_note_tablayout">Заметки</string>
+    <string name="title_task_tablayout">Задачи</string>
+
+    <!--    TasksFragment-->
+    <string name="desc_add_action_task">Добавить задачу</string>
+    <string name="title_task_toolbar">Задачи</string>
+
+    <!--    TaskEntryBottomSheetDialog-->
+    <string name="title_task_enter_bottom_sheet">Новая задача</string>
+    <string name="hint_single_task_title_entry">Описание задачи</string>
+    <string name="action_group_mode_entry_bottom_sheet">Групповая задача?</string>
+    <string name="hint_group_task_title_entry">Описание группы задач</string>
+    <string name="label_subtasks_entry_bottom_sheet">Подзадачи</string>
+    <string name="action_add_subtask_entry_bottom_sheet">Добавить подзадачу</string>
+    <string name="action_cancel_entry_bottom_sheet">Отменить</string>
+    <string name="action_save_entry_bottom_sheet">Сохранить</string>
+
+    <!--    TaskEditBottomSheetDialog-->
+    <string name="title_task_edit_bottom_sheet">Редактирование</string>
+    <string name="hint_single_task_description_task_edit_bottom_sheet">Описание задачи</string>
+    <string name="hint_group_task_description_task_edit_bottom_sheet">Описание группы задач</string>
+    <string name="title_subtasks_task_edit_bottom_sheet">Подзадачи</string>
+    <string name="action_add_subtask_task_edit_bottom_sheet">Добавить подзадачу</string>
+    <string name="action_cancel_task_edit_bottom_sheet">Отменить</string>
+    <string name="action_save_task_edit_bottom_sheet">Сохранить</string>
+
+    <!--    EnterTaskSaveConfirmationDialog-->
+    <string name="dialog_group_title_save_task_entry_bottom_sheet">Сохранить группу задач: %1$s?</string>
+    <string name="dialog_single_title_save_task_entry_bottom_sheet">Сохранить одиночную задачу: %1$s?</string>
+    <string name="dialog_action_save_task_entry_bottom_sheet">Сохранить</string>
+    <string name="dialog_action_close_no_save_entry_bottom_sheet">Не сохранять</string>
+    <string name="dialog_action_cancel_dialog_entry_bottom_sheet">Отмена</string>
+
+    <!--    DeleteSubtaskConfirmationDialog, DeleteTaskConfirmationDialog-->
+    <string name="dialog_title_delete_subtask_edit_bottom_sheet">Удаление</string>
+
+    <!--    DeleteSubtaskConfirmationDialog-->
+    <string name="dialog_message_delete_subtask_edit_bottom_sheet">Удалить подзадачу: %1$s?</string>
+    <string name="dialog_action_delete_subtask_edit_bottom_sheet">Удалить</string>
+    <string name="dialog_action_cancel_edit_bottom_sheet">Отмена</string>
+
+    <!--    DeleteTaskConfirmationDialog-->
+    <string name="dialog_title_delete_taskgroup_task_fragment">Удалить группу задач: %1$s?</string>
+    <string name="dialog_title_delete_single_task_task_fragment">Удалить одиночную задачу: %1$s?</string>
+    <string name="dialog_action_delete_task_fragment">Да</string>
+    <string name="dialog_action_cancel_task_fragment">Нет</string>
+
+    <!--    SaveEditTaskConfirmationDialog-->
+    <string name="dialog_title_save_changes_task_edit_bottom_sheet">Сохранить изменения?</string>
+    <string name="dialog_action_save_changes_task_edit_bottom_sheet">Да</string>
+    <string name="dialog_action_discard_changes_task_edit_bottom_sheet">Нет</string>
+    <string name="dialog_action_cancel_task_edit_bottom_sheet">Отмена</string>
+</resources>

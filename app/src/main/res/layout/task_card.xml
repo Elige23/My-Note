@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    Layout for single task/subtask item used in two contexts:
+    1. TasksAdapter (TaskFragment):
+       - Represents a Single Task in the main tasks list
+       - CheckBox indicates completion status (interactive)
+       - Shows description and creation time
+
+    2. SubTasksAdapter (inside TasksAdapter for group task element):
+       - Represents a subtask within a group task
+       - CheckBox indicates subtask completion (interactive)
+       - Shows description and creation time
+-->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkBoxSingleTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|top"
+            android:clickable="true"
+            android:padding="5dp"
+            app:buttonTint="@color/secondary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/descSingleTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/timeSingleTaskCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:padding="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

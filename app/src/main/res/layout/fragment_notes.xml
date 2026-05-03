@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Container fragment that hosts the navigation graph for the Notes feature.
+
+    NavHostFragment handles all navigation between note-related screens:
+    - NoteHomeFragment (default start destination) - displays all notes
+    - NoteAddFragment - create new note
+    - NoteEditFragment - edit existing note
+
+    Navigation is defined in nav_graph_note.xml.
+
+    Back navigation behavior (implemented in NotesFragment):
+    - When inside add/edit screens: navigates back within the nested graph
+    - When at NoteHomeFragment or TasksFragment: delegates to Activity's main NavHost (handles app-wide back)
+    This custom logic allows seamless back navigation across the entire app.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.NotesFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentNoteContainer"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="false"
+        app:navGraph="@navigation/nav_graph_note" />
+</LinearLayout>
