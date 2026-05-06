@@ -115,4 +115,4 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ## 📞 Contact
 - **Email:** kazlova.viktoryia@gmail.com
-- **LinkedIn:** [Viktoryia Kazlova](https://www.linkedin.com/in/viktoryia-kazlova-5a9878406/)
+- **LinkedIn:** [Viktoryia Kazlova](https://www.linkedin.com/in/viktoryia-kazlova/)
